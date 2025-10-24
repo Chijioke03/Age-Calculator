@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator ||</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="age-calculator">
+        <section class="input-data">
+            <label class="data day">
+               <h3>Day</h3>
+               <input type="text" name="" id="day" placeholder="DD" maxlength="2" min="1" max="31">
+                <p class="error"></p>
+            </label>
+            <label class="data month">
+               <h3>month</h3>
+               <input type="text" name="month" id="month" placeholder="MM" maxlength="2" min="1" max="12">
+                <p class="error"></p>
+            </label>
+            <label class="data year">
+               <h3>Year</h3>
+               <input type="text" name="year" id="year" placeholder="YY" maxlength="4" min="1500">
+               <p class="error"></p>
+            </label>
+
+        </section>
+     <div class="arrow">
+        <div class="arrow-line"></div>
+        <img src="assets/images/icon-arrow.svg" alt="icon-arrow" id="arrow-btn">
+     </div>
+        <section class="age-result">
+            <div class="age years">
+                <div class="age-blank one"></div>
+                <p id="display-years"></p>
+                
+                <h1>years</h1>
+            </div>
+            <div class="age months">
+                <div class="age-blank two"></div>
+                <p id="display-months"></p>
+                
+                <h1>months</h1>
+            </div>
+            <div class="age days">
+                <div class="age-blank three"> </div>
+               <p id="display-days"></p>
+                <h1>days</h1>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>
